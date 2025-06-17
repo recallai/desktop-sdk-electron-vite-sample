@@ -32,6 +32,11 @@
     "electron": "35.1.5",
     "vite": "^5.4.18"
   },
+  "overrides": {
+    "@electron/packager": {
+      "@electron/osx-sign": "github:recallai/osx-sign"
+    }
+  },
   "dependencies": {
     "@recallai/desktop-sdk": "^2025.4.15-f91467985221a0193c9b3ac74a37b41dff7ca0a3",
     "@vitejs/plugin-react": "^4.4.0",

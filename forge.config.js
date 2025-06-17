@@ -5,7 +5,10 @@ module.exports = {
   packagerConfig: {
     asar: {
       unpackDir: "node_modules/@recallai"
-    }
+    },
+    osxSign: {
+      continueOnError: false,
+    },
   },
   rebuildConfig: {},
   makers: [
