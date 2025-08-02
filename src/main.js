@@ -200,6 +200,7 @@ app.on('ready', () => {
   });
 
   RecallAiSdk.addEventListener('meeting-detected', async (evt) => {
+    console.log("MEETING DETECTED", evt);
     detectedMeeting = evt;
 
     let notif = new Notification({
